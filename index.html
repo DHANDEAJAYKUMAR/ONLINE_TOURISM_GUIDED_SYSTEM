@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Guidance Website</title>
+    <style>
+        /* Apply the background image to the entire page */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url('aero.png'); /* Set aero.png as background */
+            background-size: cover; /* Make the image cover the full viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.4); /* Slightly transparent background */
+            padding: 10px;
+        }
+
+        .links-container {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .link-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Hero section styling */
+        .hero-section {
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Adjust position of the welcome message */
+        .hero-section-title {
+            font-size: 4rem;
+            margin-bottom: 430px;
+            background-color: rgba(15, 113, 233, 0.1); /* Light frosted background */
+            padding: 20px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            color: white;
+            position: relative;
+            top: -80px; /* Move the title higher */
+        }
+
+        /* Centered button styling for Explore and Book Now */
+        .center-button-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Styling for buttons with translucent effect */
+        .hero-button, .bottom-button {
+            background-color: rgba(255, 255, 255, 0.2); /* Light glass-like transparency */
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(6px); /* Adds a frosted effect */
+            transition: background-color 0.3s;
+        }
+
+        .hero-button:hover, .bottom-button:hover {
+            background-color: rgba(0, 128, 0, 0.7); /* Darken to a green shade on hover */
+        }
+
+        /* Bottom buttons positioning */
+        .bottom-button {
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .about-us-button {
+            left: 20px;
+        }
+
+        .feedback-button {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+  
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero-section">
+        <h1 class="hero-section-title">Welcome to Our Tourism Guidance</h1>
+        
+        <!-- Centered buttons for Explore and Book Now -->
+        <div class="center-button-container">
+            <a href="explore.html" class="hero-button">Explore</a>
+            <a href="https://www.easemytrip.com/?adgroupid=1161085082876294&msclkid=72d895dea800164ffb53f3ec032c0612&utm_source=bing&utm_medium=cpc&utm_campaign=Non%20Brand%20(Flights%20Booking)_Desktop&utm_term=conform%20ticket&utm_content=Keywords-Ticket_EM" class="hero-button">Book Now</a>
+        </div>
+
+        <!-- Bottom buttons for About Us and Feedback -->
+        <a href="service.html" class="bottom-button about-us-button">About Us</a>
+        <a href="booknow.html" class="bottom-button feedback-button">Feedback</a>
+    </section>
+</body>
+</html>
